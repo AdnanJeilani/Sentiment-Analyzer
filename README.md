@@ -1,8 +1,8 @@
-#Sentiment Analysis of Tweets
+# Sentiment Analysis of Tweets
 
 This project aims to perform sentiment analysis of tweets using Python and the TextBlob library.
 
-Prerequisites
+## Prerequisites
 Before you begin, ensure you have met the following requirements:
 
 You have installed Python on your local machine.
@@ -31,4 +31,4 @@ Plots the distribution of sentiments in a bar plot.
 Generates a wordcloud of all the tweets to visualize the most frequent words.
 Conclusion
 
-This code provides a basic example of how to perform sentiment analysis of tweets using Python and the TextBlob library. You can further modify and improve the code as per your requirements.
+### This code provides a basic example of how to perform sentiment analysis of tweets using Python and the TextBlob library. You can further modify and improve the code as per your requirements.
