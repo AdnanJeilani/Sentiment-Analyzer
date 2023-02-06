@@ -16,7 +16,7 @@ Installing
 To install the required libraries, use the following pip command in the terminal or command prompt:
 
 Copy code
-##### pip install pandas matplotlib textblob wordcloud
+#### pip install pandas matplotlib textblob wordcloud
 
 The code performs the following steps:
 
