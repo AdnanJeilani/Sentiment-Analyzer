@@ -16,7 +16,7 @@ Installing
 To install the required libraries, use the following pip command in the terminal or command prompt:
 
 Copy code
-"pip install pandas matplotlib textblob wordcloud"
+### "pip install pandas matplotlib textblob wordcloud"
 
 The code performs the following steps:
 
@@ -31,4 +31,4 @@ Plots the distribution of sentiments in a bar plot.
 Generates a wordcloud of all the tweets to visualize the most frequent words.
 Conclusion
 
-### This code provides a basic example of how to perform sentiment analysis of tweets using Python and the TextBlob library. You can further modify and improve the code as per your requirements.
+This code provides a basic example of how to perform sentiment analysis of tweets using Python and the TextBlob library. You can further modify and improve the code as per your requirements.
