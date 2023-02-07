@@ -6,10 +6,8 @@ This project aims to perform sentiment analysis of tweets using Python and the T
 Before you begin, ensure you have met the following requirements:
 
 You have installed Python on your local machine
-
 You have installed the following libraries:
 pandas
-
 matplotlib
 textblob
 wordcloud
