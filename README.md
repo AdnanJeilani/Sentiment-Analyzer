@@ -11,7 +11,7 @@ pandas
 matplotlib
 textblob
 wordcloud
-Installing
+You have obtained a valid Twitter API key
 
 To install the required libraries, use the following pip command in the terminal or command prompt:
 
