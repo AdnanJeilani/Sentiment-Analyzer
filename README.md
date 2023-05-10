@@ -2,34 +2,46 @@
 
 This project aims to perform sentiment analysis of tweets using Python and the TextBlob library.
 
-## Prerequisites
-Before you begin, ensure you have met the following requirements:
+### Prerequisites
 
-You have installed Python on your local machine
-You have installed the following libraries:
+Make sure you have the following libraries installed in your Python environment:
 
-pandas
-matplotlib
-textblob
-wordcloud
-You have obtained a valid Twitter API key
+- wordcloud
+- textblob
+- matplotlib
+- plotly
+- pandas
+- numpy
+- tweepy
+- nltk
 
-To install the required libraries, use the following pip command in the terminal or command prompt:
+You can install these libraries using pip:
 
-Copy code
-#### pip install pandas matplotlib textblob wordcloud
+```
+pip install wordcloud textblob matplotlib plotly pandas numpy tweepy nltk
+```
+## Usage
 
-The code performs the following steps:
+1. Clone the repository to your local machine or download the code files.
 
-Loads the dataset containing tweets into a pandas dataframe.
-Cleans the data to remove any unwanted characters or words.
-Calculates the subjectivity and polarity of each tweet using the TextBlob library.
-Adds the subjectivity and polarity values as columns in the dataframe.
-Sorts the dataframe based on polarity and displays all positive and negative tweets.
-Calculates the percentage of positive, negative, and neutral tweets.
-Plots the polarity and subjectivity of each tweet in a scatter plot.
-Plots the distribution of sentiments in a bar plot.
-Generates a wordcloud of all the tweets to visualize the most frequent words.
-Conclusion
+2. Open the `Sentiment Analysis.ipynb` notebook in Jupyter or any compatible Python IDE.
 
-This code provides a basic example of how to perform sentiment analysis of tweets using Python and the TextBlob library. You can further modify and improve the code as per your requirements.
+3. Run the notebook to perform sentiment analysis on tweets. The code will access the Twitter API, retrieve tweets with the search term "spx," clean the text, calculate sentiment polarity and subjectivity, and analyze the sentiment of the tweets.
+
+4. The results will be displayed through various visualizations, including a word cloud, scatter plot of polarity and subjectivity, and a bar chart of sentiment analysis counts.
+
+## How It Works
+
+1. Twitter API Authentication: The code reads Twitter API credentials from a CSV file and uses them to authenticate with the Twitter API.
+
+2. Tweet Retrieval: Using the authenticated API object, the code searches for tweets containing the search term "spx." It retrieves up to 100 tweets in English since November 1, 2021.
+
+3. Text Cleaning: The code defines a function to clean the tweet text by removing mentions, hyperlinks, and retweets using regular expressions. It applies this function to all the tweets in the DataFrame.
+
+4. Sentiment Analysis: The code defines functions to calculate the subjectivity and polarity scores of each tweet using TextBlob. It applies these functions to the tweet text column in the DataFrame and stores the results in new columns.
+
+5. Sentiment Classification: The code defines a function to classify the sentiment based on the polarity score. It adds an "Analysis" column to the DataFrame, which contains the sentiment category (positive, negative, or neutral) for each tweet.
+
+6. Visualization: The code uses various libraries such as wordcloud, matplotlib, and plotly.express to visualize the sentiment analysis results. It creates a word cloud, scatter plot, and bar chart to provide insights into the sentiment of the tweets.
+
+Note: The code assumes that you have a CSV file named "credentials.csv" containing the necessary Twitter API credentials. You should replace the placeholder values in the CSV file with your actual credentials.
